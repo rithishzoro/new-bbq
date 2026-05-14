@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+  color: #404040;
+  font-size: 1rem;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url(/dark-ribs.jpg);
+  background-color: #404040;
+  padding: 0 1em 1em;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin: 0;
+}
+h1 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+strong {
+  font-weight: 900;
+}
+h2 {
+  margin: 0;
+  font-size: 1.3125;
+}
+h2 + p {
+  margin: 0;
+  color: #f18119;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.top-text {
+  font-size: 0.625;
+  font-weight: 900;
+  color: #f18119;
+  text-transform: uppercase;
+  order: -1;
+  border-top: 5px solid ;
+  padding-top:5px ;
+  border-image: linear-gradient(to left,#f18119 ,#ffa51d) 1;
+}
+.fine-print {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+.main-content {
+  padding: 2em 1em;
+}
+
+.intro *,.main-content * {
+  max-width: 450px;
+  margin: 0 auto;
+}
+.content-body{
+  margin: 1em auto;
+}
+button{
+  color: #fff;
+  text-transform: uppercase;
+  background-image: linear-gradient( to right,#ffa51d,#ff713b);
+  letter-spacing:1px ;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  transition: all 1s;
+}
+button:hover{
+color: black;
+transform: scale(1.1);
+}
+.email-collector{
+  width: 80%;
+  max-width: 300px;
+}
+.inputbox{
+  border: 1px solid #404040;
+  transition:all 2s ;
+}
+.inputbox:focus{
+  transform: scale(1.1);
+}
+.inputbox,.inputbtn{
+  width: 100%;
+  margin-bottom: 0.75em;
+  text-align: center;
+  padding: .5em;
+  border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+  body {
+    font-size: 1.125rem;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2,
+  h1 + p {
+    font-family: 1.75rem;
+  }
+  .intro,
+  .main-content {
+    width: 50%;
+    height: 100vh;
+  }
+  .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
